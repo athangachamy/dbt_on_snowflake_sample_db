@@ -1,23 +1,20 @@
-resolves #
+This is a:
+- [ ] bug fix PR with no breaking changes — please ensure the base branch is `master`
+- [ ] new functionality — please ensure the base branch is the latest `dev/` branch
+- [ ] a breaking change — please ensure the base branch is the latest `dev/` branch
 
-### Problem
-
+## Description & motivation
 <!---
-  Describe the problem this PR is solving. What is the application state
-  before this PR is merged?
--->
-
-### Solution
-
-<!---
-  Describe the way this PR solves the above problem. Add as much detail as you
-  can to help reviewers understand your changes. Include any alternatives and
-  tradeoffs you considered.
+Describe your changes, and why you're making them.
 -->
 
 ## Checklist
-- [ ] This code is associated with an [issue](https://github.com/dbt-labs/dbt-utils/issues) which has been triaged and [accepted for development](https://docs.getdbt.com/docs/contributing/oss-expectations#pull-requests).
-- [ ] I have read [the contributing guide](https://github.com/dbt-labs/dbt-utils/blob/main/CONTRIBUTING.md) and understand what's expected of me
-- [ ] I have run this code in development and it appears to resolve the stated issue
-- [ ] This PR includes tests, or tests are not required/relevant for this PR
+- [ ] I have verified that these changes work locally on the following warehouses (Note: it's okay if you do not have access to all warehouses, this helps us understand what has been covered)
+    - [ ] BigQuery
+    - [ ] Postgres
+    - [ ] Redshift
+    - [ ] Snowflake
+- [ ] I have "dispatched" any new macro(s) so non-core adapters can also use them (e.g. [the `star()` source](https://github.com/fishtown-analytics/dbt-utils/blob/master/macros/sql/star.sql))
 - [ ] I have updated the README.md (if applicable)
+- [ ] I have added tests & descriptions to my models (and macros if applicable)
+- [ ] I have added an entry to CHANGELOG.md
