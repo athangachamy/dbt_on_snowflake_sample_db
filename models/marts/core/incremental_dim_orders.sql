@@ -10,6 +10,7 @@ Full documentation: https://docs.getdbt.com/docs/building-a-dbt-project/building
     config(
         materialized = 'incremental',
         unique_key = 'order_key',
+        incremental_strategy ='merge',
         tags=['finance']
     )
 }}
